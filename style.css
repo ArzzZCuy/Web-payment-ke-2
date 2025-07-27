@@ -1,0 +1,63 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('profile.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+    color: rgb(255, 255, 255);
+    margin-top: 20px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2em;
+    color: rgb(255, 255, 255);
+}
+
+.Payment {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    background: rgba(86, 86, 86, 0.2); /* Transparan */
+    backdrop-filter: blur(10px); /* Blur */
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.typing {
+      font-family: monospace;
+      font-size: 24px;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 3px solid black; /* efek cursor */
+      width: 0;
+      animation: typing 3s steps(20) forwards, blink 0.7s step-end infinite;
+    }
+
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 100%; } /* jumlah karakter */
+    }
+
+    @keyframes blink {
+      50% { border-color: transparent; }
+    }
+
+img {
+    display: grid;
+    place-self: center;
+}
+
+button {
+    border: none;
+    background-color: grey;
+    color: white;
+}
